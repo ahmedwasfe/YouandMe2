@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp">
+    <RelativeLayout
+
+        android:id="@+id/message_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/rect_round_primary_color">
+        <ImageView
+            android:id="@+id/image_message_other"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            tools:src="@drawable/ic_edit_image1" />
+        <TextView
+            android:id="@+id/text_other_message_image_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_message_other"
+            android:layout_alignEnd="@id/image_message_other"
+            android:layout_marginEnd="8dp"
+            android:textSize="12sp"
+            android:textColor="@color/whiteColor"
+            tools:text="8:00 PM"/>
+
+
+
+            <TextView
+                android:id="@+id/text_message_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/message_text_bg"
+                android:padding="15dp"
+                android:text="Mesagge"
+                android:textColor="@color/whiteColor"
+                android:textSize="14sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/text_other_message_text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_message_other"
+                android:layout_alignEnd="@id/text_message_other"
+                android:layout_marginTop="-15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/whiteColor"
+                android:textSize="12sp"
+                tools:text="8:00 PM" />
+
+
+            <ImageView
+                android:id="@+id/other_message_audio"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/ic_play_audio_white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"/>
+
+            <SeekBar
+                android:id="@+id/seekbar_other_message"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/other_message_audio"/>
+
+            <TextView
+                android:id="@+id/text_progress_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whiteColor"
+                android:adjustViewBounds="true"
+                android:text="0:0"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/other_message_audio"
+                android:layout_below="@id/seekbar_other_message"/>
+
+            <TextView
+                android:id="@+id/text_other_message_audio_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seekbar_other_message"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/seekbar_other_message"
+                android:adjustViewBounds="true"
+                android:text="0:0"
+                android:textColor="@color/whiteColor" />
+
+
+    </RelativeLayout>
+</FrameLayout>

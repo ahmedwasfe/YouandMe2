@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!--
+            XML Code Layout
+
+    -->
+
+
+    <string name="app_name">Post Photo</string>
+
+
+    <string name="register_text">إنشاء حساب</string>
+    <string name="login_text">تسجيل الدخول</string>
+    <string name="Already_an_account">لدي حساب بالفعل؟</string>
+    <string name="i_not_have_account">ليس لديك حساب؟</string>
+
+    <string name="add_data_user">إضافة البيانات</string>
+    <string name="write_message">كتابة رسالة...</string>
+    <string name="edit_image">تعديل الصورة</string>
+    <string name="remimber_me">تذكر معلومات الدخول</string>
+    <string name="save_status">حفظ الحالة</string>
+    <string name="me">أنا</string>
+    <string name="search">بحث</string>
+    <string name="next">التالي</string>
+
+    <string name="title_activity_conversation">المحادثات</string>
+    <string name="title_activity_friends">الأصدقاء</string>
+    <string name="add_Friends">إضافة صديق</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="share">مشاركة</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string name="log_out_dialog"> تسجيل الخروج من You &amp; Me</string>
+    <string name="cancel">إلغاء</string>
+    <string name="done">تم</string>
+
+    <string name="gender">الجنس</string>
+    <string name="genderMail">ذكر</string>
+    <string name="genderFemail">أنثى</string>
+    <string name="yourName">الإسم</string>
+    <string name="yourPhone">الهاتف</string>
+    <string name="yourAge">العمر</string>
+    <string name="change_profile_image">تغيير صورة الملف الشخصي</string>
+
+    <string name="user_name">إسم المستخدم</string>
+    <string name="e_mail">الإيميل</string>
+    <string name="passwrod">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="account_settings">الإعدادات</string>
+    <string name="all_usres">المستخدمين</string>
+    <string name="create_a_new_account">إنشاء حساب جديد</string>
+    <string name="login_your_account">تسجيل الدخول إلى حسابي</string>
+    <string name="welcome_app"><![CDATA[Welcome to You & Me Chat App]]></string>
+    <string name="login">تسجيل الدخول</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Welcome To Requests Fragment</string>
+    <string name="requests">طلبات الصداقة</string>
+    <string name="chats">المحادثات</string>
+    <string name="friends">الأصدقاء</string>
+    <string name="friends2">الأصدقاء</string>
+    <string name="friends_online">الأصدقاء النشطون</string>
+
+
+    <string name="enterEmail">أدخل الإيميل</string>
+    <string name="enterPass">أدخل كلمة المرور</string>
+    <string name="enterConfPass">تأكيد كلمة المرور</string>
+    <string name="email_placeholder">الإيميل</string>
+    <string name="password_placeholder">كلمة المرور</string>
+    <string name="password_confirm">تأكيد كلمة المرور</string>
+
+    <string name="forget_pass">نسيت كلمة المرور ؟</string>
+    <string name="register">إنشاء حساب</string>
+    <string name="login2">تسجيل الدخول</string>
+    <string name="resetPass">إعادة تعيين كلمة المرور</string>
+
+    <string name="default_status">Hi there, I\'m using You &amp; Me</string>
+    <string name="enter_status">أدخل الحالة الخاصة بك</string>
+    <string name="status">الحالة</string>
+    <string name="all_users">المستخدمين</string>
+    <string name="conversation">المحادثة</string>
+    <string name="conversation2">المحادثات</string>
+    <string name="title_activity_all_users">title_activity_all_users</string>
+    <string name="navigation_drawer_open">فتح القائمة المنبثقة</string>
+    <string name="navigation_drawer_close">إغلاق القائمة المنبثقة</string>
+
+    <string name="action_settings">الإعدادات</string>
+    <string name="action_about">عن التطبيق</string>
+    <string name="title_activity_home">الصفحة الرئيسية</string>
+    <string name="editdata">تعديل الملف الشخصي</string>
+
+    <string name="send_message">إرسال رسالة</string>
+    <string name="send">إرسال</string>
+    <string name="open_profile">فتح الملف الشخصي</string>
+
+
+    <string name="change_email">تغيير الإيميل</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="new_password">كلمة المرور الجديد</string>
+    <string name="confirm_new_password">تأكيد كلمة المرور</string>
+    <string name="change_language">تغيير اللغة</string>
+    <string name="delete_account">إلغاء تنشيط الحساب</string>
+
+    <string name="set_profile_image">تغيير صورة الملف الشخصي</string>
+    <string name="open_camera">فتح الكاميرا</string>
+    <string name="open_gallery">فتح الأستوديو</string>
+    <string name="remove_image">حذف الصورة</string>
+
+
+    <string name="background">خلفية الشاشة</string>
+
+    <string name="select_status">تحديد الحالة الجديدة</string>
+
+    <string name="language_settings">إعدادات اللغة</string>
+
+
+
+    <!--
+            JAVA Code Activity
+
+    -->
+
+
+    <string name="change_email_successfull">تم تغيير الإيميل</string>
+    <string name="success_to_change_password">تم تغيير كلمة المرور</string>
+    <string name="error_to_change_email_pass">حدث خطأ الرجاء المحاولة لاحقاً</string>
+
+    <string name="two_passwords_match">كلمتا المرور غير متطابقتين</string>
+    <string name="password_must_be_more_than_6_characters_long">يجب أن تكون كلمة المرور أكثر من 6 حروف</string>
+
+
+    <string name="really_delete_accouny">هل أنت متأكد أنك تريد إلغاء تنشيط الحساب</string>
+    <string name="really_delete_chat">هل أنت متأكد أنك تريد حذف هذه المحادثة</string>
+    <string name="delete">حذف</string>
+
+    <string name="email_verification">تأكيد الإيميل</string>
+    <string name="email_verification_done">تم تأكيد الإيميل</string>
+
+
+    <string name="cannot_Log_in">لا يمكن تسجيل الدخول الرجاء التأكد من الإيميل أو كلمة المرور.</string>
+    <string name="cannot_Log_up">لا يمكن إنشاء حساب الرجاء التأكد من الإيميل أو كلمة المرور.</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="check_internet">لا يوجد إتصال بالإنترنت الرجاء المحاولة لاحقاً</string>
+
+    <string name="enter_registered_email">أدخل الإيميل الذي قمت بالتسجيل من خلاله</string>
+    <string name="sent_message_to_reset_password">تم إرسال رسالة إلى البريد الإلكتروني يرجى التحقق منه</string>
+    <string name="failed_to_send_email">فشل في إرسال رسالة إلى الإيميل</string>
+
+    <string name="forward_message">إعادة توجيه إلى </string>
+
+
+
+    <string name="error_in_sending_request">لم يتم إرسال طلب الصداقة</string>
+
+
+    <string name="add_data_success">تم إضافة البيانات بنجاح</string>
+    <string name="edit_data_success">تم تعديل البيانات بنجاح</string>
+    <string name="error_in_uploading_image">حدث خطأ في رفع الصورة</string>
+
+    <string name="sent_friend_request">إرسال طلب صداقة</string>
+    <string name="accept_friend_request">قبول طلب الصداقة</string>
+    <string name="cancel_friend_request">إلغاء إرسال طلب الصداقة</string>
+    <string name="unFriend_this_person">إلغاء الصداقة</string>
+    <string name="friend">صديق</string>
+
+    <string name="help">المساعدة</string>
+    <string name="Invite_friend">دعوة صديق</string>
+    <string name="error_to_invite_friends">عذرا لا يوجد تطبيق لدعوة الأصدقاء</string>
+
+    <string name="accept">قبول</string>
+    <string name="decline">رفض</string>
+    <string name="cancel_request">إلغاء الطلب</string>
+    <string name="notification">الإشعارات</string>
+    <string name="email_pattern">لقد أدخلت إيميل بطريقة خاطئة</string>
+    <!--
+     array string
+     change Language
+     -->
+
+    <string-array name="language">
+        <item>العربية</item>
+        <item>الإنجليزية</item>
+        <item>الفرنسية</item>
+        <item>التركية</item>
+        <item>الإسبانية</item>
+        <item>الإيطالية</item>
+
+    </string-array>
+
+
+    <!--
+    array string
+    change Status
+    -->
+
+    <string-array name="status">
+        <item>متوفر</item>
+        <item>مشغول</item>
+        <item>في المدرسة</item>
+        <item>في الجامعة</item>
+        <item>في السينما</item>
+        <item>في العمل</item>
+        <item>البطارية على وشك النفاذ</item>
+        <item>لا أستطيع التحدث, You &amp; Me فقط</item>
+        <item>في إجتماع</item>
+        <item>في النادي الرياضي</item>
+        <item>نائم</item>
+        <item>المكالمات الطارئة فقط</item>
+    </string-array>
+
+    <!--
+   array string
+   change Settings
+   -->
+
+    <array name="settings">
+        <item>تغيير الإيميل</item>
+        <item>تغيير كلمة المرور</item>
+        <item>اللغة</item>
+        <item>إلغاء تنشيط الحساب</item>
+        <item>دعوة صديق</item>
+        <item>المساعدة</item>
+    </array>
+
+</resources>

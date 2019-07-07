@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_add_data"
+    android:orientation="vertical"
+    tools:context="com.ahmet.postphotos.UI.UserData.Data.AddData">
+
+    <include layout="@layout/app_tool_bar"
+        android:id="@+id/app_AddDatPage_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/textNameAddUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/yourName"
+                android:inputType="text"
+                android:padding="15dp" />
+
+
+            <EditText
+                android:id="@+id/textPhoneAddUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/yourPhone"
+                android:inputType="phone"
+                android:padding="15dp" />
+
+
+            <EditText
+                android:id="@+id/textAgeAddUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/yourAge"
+                android:inputType="number"
+                android:padding="15dp" />
+
+            <RadioGroup
+                android:id="@+id/Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/gender"
+                    android:textColor="@color/darkColor"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:text="@string/genderMail"
+                    android:textColor="@color/darkColor" />
+
+                <RadioButton
+                    android:id="@+id/femail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:text="@string/genderFemail"
+                    android:textColor="@color/darkColor" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddData"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:padding="10dp"
+            android:text="@string/add_data_user"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

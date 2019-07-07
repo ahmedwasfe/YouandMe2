@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp">
+
+    <RelativeLayout
+        android:id="@+id/message_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/rect_round_white_color">
+
+        <ImageView
+            android:id="@+id/image_message_my"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/ic_edit_image1" />
+
+        <TextView
+            android:id="@+id/text_my_message_image_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/image_message_my"
+            android:layout_below="@id/image_message_my"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorBalck"
+            android:textSize="12sp"
+            tools:text="8:00 PM" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:visibility="visible"
+            android:id="@+id/constrain_my_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/image_message_my"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end"
+            android:background="@drawable/rect_round_white_color">
+
+            <TextView
+                android:id="@+id/text_message_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/image_message_my"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/message_text_bg2"
+                android:padding="8dp"
+                android:text="Message"
+                android:textColor="@color/colorBalck"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_my_message_text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/text_message_other"
+                android:layout_below="@id/text_message_other"
+
+               android:padding="5dp"
+                android:text="8:00"
+                android:textColor="@color/colorBalck"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_message_my" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/image_message_my"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/my_message_audio"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignEnd="@+id/image_message_my"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_play_audio" />
+
+            <SeekBar
+                android:id="@+id/seekbar_my_message"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/my_message_audio"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_progress_audio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:text="0:0"
+                android:textColor="@color/colorBalck"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekbar_my_message" />
+
+            <TextView
+                android:id="@+id/text_my_message_audio_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:text="0:0"
+                android:textColor="@color/colorBalck"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekbar_my_message" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

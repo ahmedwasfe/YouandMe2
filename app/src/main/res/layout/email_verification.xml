@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_email_verification"
+    tools:context="com.ahmet.postphotos.UI.Account.Account_Login.EmailVerification">
+
+    <include
+        android:id="@+id/app_EmailVerification_toolbar"
+        layout="@layout/app_tool_bar" />
+
+    <ProgressBar
+        android:id="@+id/progressBarEmailVerivication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="invisible"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/textEmailVerificatio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done Sned Messsage To Email Please Check Your Email"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

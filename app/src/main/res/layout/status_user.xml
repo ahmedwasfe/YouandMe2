@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ahmet.postphotos.UI.Account.Profile.EditStatus">
+
+    <include
+        android:id="@+id/app_statusPage_toolbar"
+        layout="@layout/app_tool_bar" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="3"
+            android:hint="@string/enter_status"
+            android:inputType="text"
+            android:padding="1dp" />
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:background="@color/graycolor"/>
+
+        <ImageButton
+            android:id="@+id/btnSaveStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:background="@color/whiteColor"
+            android:padding="12dp"
+            android:text="@string/save_status"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor" />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_status"
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/graycolor"/>
+            <ListView
+                android:id="@+id/list_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

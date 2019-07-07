@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="10dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:background="?android:selectableItemBackground"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_ReplayMessage_Freiend"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/default_avatar2" />
+
+    <TextView
+        android:id="@+id/text_ReplayMessage_FreiendName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_ReplayMessage_Freiend"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/image_ReplayMessage_Freiend"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_ReplayMessage_FreiendStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_ReplayMessage_FreiendName"
+        android:layout_below="@+id/text_ReplayMessage_FreiendName"
+        android:layout_marginTop="10dp"
+        android:text="User default Status" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

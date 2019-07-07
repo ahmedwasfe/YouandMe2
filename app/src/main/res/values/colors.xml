@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#4680da</color>
+
+    <color name="redcolor">#e82702</color>
+    <color name="redcolorlight">#ffff4444</color>
+    <color name="redcolordark">#ffcc0000</color>
+    <color name="darkColor">#222222</color>
+    <color name="colorBalck">#393939</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="whiteTransparent">#ffffff</color>
+    <color name="whiteColor2">#ffffff</color>
+    <color name="grayColor">#eeeeea</color>
+    <color name="grayColor2">#e4e3e3</color>
+    <color name="graycolor">#c2c2c2</color>
+    <color name="graycolor2">#a1a0a0</color>
+
+
+    <color name="bg_emailpass_text">#e5e7e8</color>
+    <color name="bg_btn_">#0b5174</color>
+    <color name="bg_btn">#4680da</color>
+    <color name="bg_btn_2">#1d5fc6</color>
+    <color name="text_btn">#ffffff</color>
+    <color name="text_btnhg">#e8e8e8</color>
+
+
+    <color name="colorPrimary2">#131a56</color>
+    <color name="colorPrimaryDark2">#4680da</color>
+    <color name="colorAccent2">#28abbc</color>
+    <color name="colorAccent3">#038191</color>
+
+    <color name="colorAccentDark">#0b1039</color>
+
+    <color name="backgroundEditText">#5cffffff</color>
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+
+</resources>

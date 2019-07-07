@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:frisson="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/Theme.AppCompat.Light.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ahmet.postphotos.UI.Account.Profile.Profile">
+
+    <ProgressBar
+        android:id="@+id/progressBarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/app_profile_toolbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/relativeLayout_user_image"
+        android:layout_below="@+id/app_profile_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/profile_user_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cover_image" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_setting"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_avatar2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginBottom="31dp" />
+        <ImageButton
+            android:id="@+id/set_image_cover_profile"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_edit_image1"
+            android:background="@color/whiteColor"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/graycolor"
+            android:layout_gravity="center"
+            android:id="@+id/linearLayout7"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/image_setting"
+            android:layout_alignStart="@+id/image_setting"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/imgEditImage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_edit_image1"
+                android:layout_gravity=""
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/whiteColor"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/username_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_setting"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="33dp"
+            android:layout_toEndOf="@+id/image_setting"
+            android:layout_toRightOf="@+id/image_setting"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="Ahmad AbuMandil"
+            android:textColor="@color/whiteColor"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/status_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_setting"
+            android:layout_alignLeft="@+id/username_setting"
+            android:layout_alignStart="@+id/username_setting"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:gravity="center"
+            android:text=" Android Developer"
+            android:textColor="@color/whiteColor" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_friends_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/relativeLayout_user_image"
+        android:padding="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_count_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/darkColor"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/friends"
+                android:textColor="@color/colorAccentDark"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_count_friends_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/darkColor"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/post"
+                android:textColor="@color/colorAccentDark" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_below="@+id/linear_friends_count">
+
+
+        <TextView
+            android:id="@+id/textShowPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="26dp"
+            android:drawableLeft="@drawable/ic_public"
+            android:drawablePadding="24dp"
+            android:gravity="center"
+            android:text="phone"
+            android:textColor="#880E4F" />
+
+        <TextView
+            android:id="@+id/textShowAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="26dp"
+            android:drawableLeft="@drawable/ic_public"
+            android:drawablePadding="24dp"
+            android:gravity="center"
+            android:text="age"
+            android:textColor="#880E4F" />
+
+        <TextView
+            android:id="@+id/textShowGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="26dp"
+            android:drawableLeft="@drawable/ic_public"
+            android:drawablePadding="24dp"
+            android:gravity="center"
+            android:text="gender"
+            android:textColor="#880E4F" />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_profile_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_friends_count"/>
+
+</RelativeLayout>

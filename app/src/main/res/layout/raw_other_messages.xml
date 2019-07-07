@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/textUserMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/message_text_bg"
+        android:padding="10dp"
+        android:text="Mesagge"
+        android:textColor="@color/whiteColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/time_messageSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textUserMessage"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="00:00"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUserMessage" />
+
+    <ImageView
+        android:id="@+id/sendOtherMessageImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textUserMessage"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/textUserMessage"
+        android:layout_below="@+id/textUserMessage"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/error_send_other_message"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/textUserMessage"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/textUserMessage"
+        android:src="@drawable/ic_error_outline_black_24dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/textUserMessage"
+        tools:layout_editor_absoluteX="5dp"
+        android:layout_toRightOf="@+id/textUserMessage" />
+</android.support.constraint.ConstraintLayout>

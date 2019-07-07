@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/Theme.AppCompat.Light.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ahmet.postphotos.UI.UserData.User.ProfileUserMyFriends">
+
+
+    <include
+        android:id="@+id/toolbar_profile_user_myfriends"
+        layout="@layout/app_tool_bar"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_profile_user_myfriends">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/profile_myfriend_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cover_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_myFriendImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_avatar2"
+                    app:layout_constraintBottom_toBottomOf="@+id/profile_myfriend_cover_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.535"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_myfriend_cover_image" />
+
+
+                <TextView
+                    android:id="@+id/profile_myFriendName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/profile_myFriendImage"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_toEndOf="@+id/profile_myFriendImage"
+                    android:layout_toRightOf="@+id/profile_myFriendImage"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:text="Ahmad AbuMandil"
+                    android:textColor="@color/colorBalck"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_myfriend_cover_image" />
+
+                <TextView
+                    android:id="@+id/profile_myFriendStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/profile_myFriendImage"
+                    android:layout_alignLeft="@+id/profile_myFriendName"
+                    android:layout_alignStart="@+id/profile_myFriendName"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text=" Android Developer"
+                    android:textColor="@color/colorBalck"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_myFriendName" />
+
+                <TextView
+                    android:id="@+id/text_profile_myFriend_send_req"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_profile_send_req"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/edit_text"
+                    android:drawableLeft="@drawable/click_btn"
+                    android:padding="10dp"
+                    android:text="SEND FRIEND REQUEST"
+                    android:textColor="@color/darkColor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_myFriendStatus" />
+
+                <TextView
+                    android:id="@+id/text_count_friends_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:text="0"
+                    android:textColor="@color/darkColor"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/user_send_message"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_myFriendStatus" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Friends"
+                    app:layout_constraintStart_toEndOf="@+id/user_send_message"
+                    app:layout_constraintTop_toBottomOf="@+id/text_count_friends_user" />
+
+                <TextView
+                    android:id="@+id/text_count_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
+                    android:text="0"
+                    android:textColor="@color/colorBalck"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/text_count_friends_user"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_myFriendStatus" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:text="Posts"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/text_count_post" />
+
+
+                <ImageView
+                    android:id="@+id/user_send_message"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/text_profile_myFriend_send_req"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_myFriendStatus"
+                    app:srcCompat="@drawable/ic_chat_blue_24dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_post_my_friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_profile_myFriend_send_req" />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    />
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="341dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textPhone_profile_myFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:text="phone"
+                android:textColor="#880E4F"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textAge_profile_myFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="26dp"
+                android:drawableLeft="@drawable/ic_public"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:text="age"
+                android:textColor="#880E4F" />
+
+            <TextView
+                android:id="@+id/textGender_profile_myFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="26dp"
+                android:drawableLeft="@drawable/ic_public"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:text="gender"
+                android:textColor="#880E4F" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

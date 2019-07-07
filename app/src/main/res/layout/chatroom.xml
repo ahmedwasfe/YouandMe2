@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f0e9"
+    android:id="@+id/layout_conversation"
+    tools:context="com.ahmet.postphotos.UI.Main.Chat.ChatRoom">
+    <!--android:background="@color/grayColor"-->
+
+    <include layout="@layout/app_tool_bar"
+        android:id="@+id/app_ConversationPage_toolbar"/>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/messageSwipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_ConversationPage_toolbar"
+        android:layout_above="@+id/linearLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerMessages"
+            android:layout_below="@+id/app_ConversationPage_toolbar"
+            android:layout_above="@+id/linearLayout"></android.support.v7.widget.RecyclerView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/message_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageButton
+            android:id="@+id/imgAddImagetoConv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_recored_voice"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+
+        <EditText
+            android:id="@+id/textConvWriteMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="8"
+            android:background="@drawable/message_content"
+            android:ems="10"
+            android:hint="@string/write_message"
+            android:paddingBottom="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="14dp"
+            app:layout_constraintEnd_toStartOf="@+id/btncConvSend"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btncConvSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.5"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgAddImagetoConv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_send_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/btn_recored_voice"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_recored_voice"
+            android:background="@drawable/circle_record_audio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

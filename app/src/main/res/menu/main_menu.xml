@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/main_account_settings"
+        android:title="@string/account_settings" />
+
+    <item android:id="@+id/nav_add_friends"
+        android:title="@string/add_Friends"
+        android:icon="@drawable/ic_person_add_black_24dp"
+        app:showAsAction="always"/>
+
+    <!--<item android:id="@+id/main_all_user"
+        android:title="@string/all_usres"/>-->
+
+    <!--<item android:id="@+id/main_logout"
+        android:title="@string/log_out"/>-->
+</menu>

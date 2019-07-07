@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/ic_cliked_added_24dp"
+        android:state_pressed="true"/>
+
+    <item android:drawable="@drawable/ic_click_add_black_24dp"
+        />
+
+</selector>
